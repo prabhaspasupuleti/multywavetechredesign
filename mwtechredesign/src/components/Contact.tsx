@@ -32,7 +32,7 @@ const Contact = () => {
       alert('Please complete the hCaptcha.');
       return;
     }
-    
+
     try {
       const response = await fetch('http://localhost:5000/submit_contact', {
         method: 'POST',
@@ -56,7 +56,7 @@ const Contact = () => {
       // Optionally, handle network error state
     } finally {
       // Reset hCaptcha regardless of submission success/failure
-      hcaptchaRef.current?.reset();
+      hcaptchaRef.current?.resetCaptcha();
       setHcaptchaToken(null); // Clear the token
     }
 
