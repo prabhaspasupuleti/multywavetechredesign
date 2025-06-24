@@ -19,9 +19,13 @@
   "bugs": {
     "url": "https://github.com/prabhaspasupuleti/multywavetechredesign/issues"
   },
-  "homepage": "https://github.com/prabhaspasupuleti/multywavetechredesign#readme",
+  "homepage": "https://github.com/prabhaspasupuleti/multywavetechredesign",
   "description": "",
   "dependencies": {
-    "flask": "^0.2.10"
+    "@hcaptcha/react-hcaptcha": "^1.12.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.3",
+    "vite": "^4.0.0"
   }
 }
