@@ -7,4 +7,7 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
+  base: '/<multywavetechresign>/', // Add the repository base path
 });
+
+
