@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { Mail, Phone, MapPin, Clock, Send, CheckCircle } from 'lucide-react';
+import { Mail, Phone,Send, CheckCircle } from 'lucide-react';
 import HCaptcha from '@hcaptcha/react-hcaptcha'; // Import hCaptcha component
 
 const Contact = () => {
@@ -32,7 +32,7 @@ const Contact = () => {
       alert('Please complete the hCaptcha.');
       return;
     }
-
+    
     try {
       const response = await fetch('http://localhost:5000/submit_contact', {
         method: 'POST',
