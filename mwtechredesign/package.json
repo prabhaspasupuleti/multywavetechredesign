@@ -1,4 +1,5 @@
 {
+  
   "name": "vite-react-typescript-starter",
   "private": true,
   "version": "0.0.0",
@@ -40,6 +41,12 @@
   },
   "description": "mwtechredesign",
   "main": "eslint.config.js",
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prabhaspasupuleti/multywavetechredesign.git"
+  },
+  "bugs": {
+    "url": "https://github.com/prabhaspasupuleti/multywavetechredesign/issues"
+  },
+  "homepage": "https://github.com/prabhaspasupuleti/multywavetechredesign#readme"
 }
