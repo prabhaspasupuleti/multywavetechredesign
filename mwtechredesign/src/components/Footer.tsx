@@ -4,10 +4,7 @@ import { Mail, Phone, Globe, MapPin, ExternalLink } from 'lucide-react';
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
-  // Placeholder logo URL - replace with your actual logo path
-  // The original path 'src\\logo\\f5051e09-97a0-41fb-8167-6a88c1ddebc7-removebg-preview.png' is a local path and won't work in the browser.
-  // Using a placeholder image for demonstration.
-  const logoUrl = "src\\logo\\f5051e09-97a0-41fb-8167-6a88c1ddebc7-removebg-preview.png"; 
+  const logoUrl = "/src/logo/f5051e09-97a0-41fb-8167-6a88c1ddebc7-removebg-preview.png"; 
 
   const quickLinks = [
     { name: 'Home', href: '#home' },
@@ -19,10 +16,10 @@ const Footer = () => {
 
   const services = [
     { name: 'AFPIS Systems', href: '#services' },
-    { name: 'ABIS Solutions', funcs: 'd', 'description': 'Biometric identification system', href: '#services' },
+    { name: 'ABIS Solutions', href: '#services' },
     { name: 'Facial Recognition', href: '#services' },
-    { name: 'Scanners', href: '##services' },
-    { name: 'Card Printers', href: '##services' }
+    { name: 'Scanners', href: '#services' },
+    { name: 'Card Printers', href: '#services' }
   ];
 
   const recentPosts = [
@@ -41,24 +38,20 @@ const Footer = () => {
   ];
 
   return (
-    // Changed background color from bg-gray-900 to bg-gray-700
     <footer className="bg-gray-700 text-white font-inter">
-      {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid lg:grid-cols-4 gap-8">
-          {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center mb-6">
-              {/* Replaced the div with text 'MW' with an image tag */}
               <img 
                 src={logoUrl} 
                 alt="Multywave Technologies Logo" 
-                className="h-12 w-auto mr-3 rounded-lg" // Added rounded-lg for consistency
+                className="h-12 w-auto mr-3 rounded-lg"
                 onError={(e) => { 
                   const target = e.target as HTMLImageElement;
                   target.onerror = null; 
                   target.src = "https://placehold.co/150x48/000000/FFFFFF?text=Logo"; 
-                }} // Fallback image
+                }}
               />
               <div>
                 <h3 className="text-2xl font-bold">Multywave Technologies</h3>
@@ -83,7 +76,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
           <div>
             <h4 className="text-xl font-semibold mb-6">Quick Links</h4>
             <ul className="space-y-3">
@@ -101,7 +93,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Services */}
           <div>
             <h4 className="text-xl font-semibold mb-6">Our Services</h4>
             <ul className="space-y-3">
@@ -118,7 +109,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Recent Posts & Contact */}
           <div>
             <h4 className="text-xl font-semibold mb-6">Recent Posts</h4>
             <div className="space-y-4 mb-8">
@@ -171,8 +161,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Footer */}
-      {/* Changed border color from border-gray-700 to border-gray-600 */}
       <div className="border-t border-gray-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
