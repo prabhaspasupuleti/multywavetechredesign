@@ -1,0 +1,24 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prabhaspasupuleti/multywavetechredesign.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prabhaspasupuleti/multywavetechredesign/issues"
+  },
+  "homepage": "https://github.com/prabhaspasupuleti/multywavetechredesign#readme",
+  "description": ""
+}
